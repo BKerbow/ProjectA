@@ -6,23 +6,26 @@ public class UnitConverter {
 	
 	public static void main(String[] args) {
 		int menuSelection = 0;
-
-		//Scanner scanner = new Scanner(System.in);
 		
 		while (menuSelection != 4) {
-			Scanner firstMenuOption = new Scanner(System.in);
+			Scanner menuSelection = new Scanner(System.in);
 			System.out.println("Please Select an Option:");
 			System.out.println("1. Cups to Teaspoons");
 			System.out.println("2. Miles to Kilometers");
 			System.out.println("3. US Gallons to Imperial Gallons");
 			System.out.println("4. Quit");
-			firstMenuOption.close();
-			
+			break;
+		}
+		
+		Scanner scanner = new Scanner(System.in);
+		menuSelection = scanner.nextInt();
+		
 			switch (menuSelection) {
 			case 1: {
 				System.out.println("Please enter the number of cups.");
-				//scanner(System.in);
-				System.out.println("There are 48 teaspoons in one cup.");
+				double cups;
+				cups = scanner.nextInt();
+				System.out.println("In your provided amount of cups, there are " + (cups / 48) + " Teaspoons");
 				break;
 			}
 			case 2: {
@@ -46,8 +49,4 @@ public class UnitConverter {
 			}
 			}
 		}
-		}
-		
-		
-
-}
+	}
