@@ -2,6 +2,18 @@ package dev.kerbow.unitconverter;
 
 import java.util.Scanner;
 
+/*
+ * This program converts certain units of measurement into other units.
+ * 
+ * The conversions are kept within certain sub menu layers, accessed by selecting via
+ * user input from the options presented.
+ * 
+ * It uses nested switch statements to further group and organize the conversions by Volume, Distance,
+ * Time, and Mass. The final option allows you to either quit the program, or to go back to previous menus
+ * in the menu tree.
+ * 
+ */
+
 public class UnitConverter {
 	
 	public static void main(String[] args) {
@@ -54,6 +66,7 @@ public class UnitConverter {
 							break;
 						}
 						default:{
+							menuSelection = 0;
 							break;
 						}
 					}
@@ -94,6 +107,7 @@ public class UnitConverter {
 							break;
 						}
 						default:{
+							menuSelection = 0;
 							break;
 						}
 					}
@@ -134,6 +148,7 @@ public class UnitConverter {
 							break;
 						}
 						default:{
+							menuSelection = 0;
 							break;
 						}
 					}
@@ -174,6 +189,7 @@ public class UnitConverter {
 							break;
 						}
 						default:{
+							menuSelection = 0;
 							break;
 						}
 					}
