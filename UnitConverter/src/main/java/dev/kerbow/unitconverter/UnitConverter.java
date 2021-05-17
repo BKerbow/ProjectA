@@ -8,17 +8,16 @@ public class UnitConverter {
 		int menuSelection = 0;
 		
 		while (menuSelection != 4) {
-			Scanner menuSelection = new Scanner(System.in);
+			Scanner menuScan = new Scanner(System.in);
 			System.out.println("Please Select an Option:");
 			System.out.println("1. Cups to Teaspoons");
 			System.out.println("2. Miles to Kilometers");
 			System.out.println("3. US Gallons to Imperial Gallons");
 			System.out.println("4. Quit");
 			break;
-		}
-		
-		Scanner scanner = new Scanner(System.in);
-		menuSelection = scanner.nextInt();
+			
+			
+		menuSelection = menuScan.nextInt();
 		
 			switch (menuSelection) {
 			case 1: {
@@ -50,3 +49,4 @@ public class UnitConverter {
 			}
 		}
 	}
+}
